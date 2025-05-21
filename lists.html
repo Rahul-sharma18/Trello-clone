@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-[#0b837b] h-15  text-white text-2xl text-center font-[700] pt-4">Trello Project</header>
+    <p class="h-14 flex pl-8 pt-4  font-bold bg-slate-400/70 ">
+        <img class="h-4 pr-4 pl- mt-1 cursor-pointer" src="./icon.png">
+        <span>Your lists</span> 
+    </p>
+    
+    <div class="main h-173 mt-5 overflow-x-scroll flex gap-3 font-bold w-f " id="boards"> 
+        <div class="list h-fit min-w-2xs rounded-2xl p-2 single-card bg-white border-2 flex flex-col ">
+            <input type="text" placeholder="To Do" class="w-45 px-4 py-2 h-7 placeholder:font-bold placeholder:text-black cursor-pointer focus:outline-none  focus:ring-2 focus:ring-blue-500">
+            <textarea placeholder="Enter a title" class="user-input-card mt-1 hidden w-full overflow-hidden resize-none border font-light border-gray-300 p-2 rounded-md" rows="1" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"></textarea>
+            <button class="card-button w-45 mt-2 h-10 pr-16 rounded-md cursor-pointer hover:bg-slate-300" >+ Add a card</button>
+           
+            <div class="new-card-open flex gap-0.5 hidden font-light">
+                <button class="add-card p-2 mt-2 h-10 rounded-md cursor-pointer font-[500] bg-blue-500 text-white">Add card</button>
+                <button class="cross-button w-10 mt-2 rounded-md cursor-pointer hover:bg-slate-300">X</button>
+            </div>
+        </div> 
+
+        <div class="list h-fit min-w-2xs rounded-2xl single-card bg-white flex flex-col border-0">
+            <textarea placeholder="Enter a title" class="user-input-card-1 hidden min-w-2xs  m-2 overflow-hidden resize-none border font-light border-gray-300 p-2 rounded-md" rows="1" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"></textarea>
+            <button class="add-new-list cursor-pointer hover:bg-slate-300 h-12 min-w-2xs rounded-2xl bg-slate-200 p-2">+ Add another list</button>
+
+            <div class="new-card-open-1 flex gap-0.5 hidden font-light min-w-2xs m-2 mt-0">
+                <button class="add-list p-2 h-10 rounded-md cursor-pointer font-[500] bg-blue-500 text-white">Add card</button>
+                <button class="cross-button-1 w-10 rounded-md cursor-pointer hover:bg-slate-300">X</button>
+            </div>
+        </div> 
+    </div>   
+    <script src="boardPage.js"></script>
+</body>
+</html>
+
+
+<!-- 
+key = 73354637abed21b50def50995536e02b
+token= ATTA7e70d05849d226a3e69008961a3afb21371d106ccd22a9368eef72d88b2602bd43AA7592`,
+ -->
