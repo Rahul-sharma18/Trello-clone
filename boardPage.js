@@ -8,8 +8,8 @@ const state = {
   checkItems: {},
 };
 
-const API_KEY = "73354637abed21b50def50995536e02b";
-const API_TOKEN = "ATTA7e70d05849d226a3e69008961a3afb21371d106ccd22a9368eef72d88b2602bd43AA7592";
+const API_KEY = "key";
+const API_TOKEN = "toten";
 const API_BASE = "https://api.trello.com/1";
 
 const domElements = {

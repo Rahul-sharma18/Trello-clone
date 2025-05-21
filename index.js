@@ -11,7 +11,7 @@ const handleClick=(id,projectName)=>{
 }
 
 function render(){
-    fetch("https://api.trello.com/1/organizations/6818442488f0bb03c666a6e4/boards?key=73354637abed21b50def50995536e02b&token=ATTA7e70d05849d226a3e69008961a3afb21371d106ccd22a9368eef72d88b2602bd43AA7592", {
+    fetch("https://api.trello.com/1/organizations/6818442488f0bb03c666a6e4/boards?key=key&token=token", {
     method: "GET",
     headers: myHeaders
     })
@@ -94,7 +94,7 @@ newBoard.addEventListener('click',(e)=>{
         const inputData = document.getElementById('userInput').value;
         if(!inputData) return;
 
-        fetch(`https://api.trello.com/1/boards/?name=${inputData}&key=73354637abed21b50def50995536e02b&token=ATTA7e70d05849d226a3e69008961a3afb21371d106ccd22a9368eef72d88b2602bd43AA7592`, {
+        fetch(`https://api.trello.com/1/boards/?name=${inputData}&key=key&token=token`, {
         method: 'POST'
         })
         .then(response => {
